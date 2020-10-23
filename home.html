@@ -1,15 +1,277 @@
 <!doctype html>
-
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Responsive Redesign</title>
+  </head>
   <body>
-    <a href="redesign.html">link</a>
-    <!-- TODO: put your HTML code here! -->
+    <div class="bg-light">
+      <div class="container text-center">
+        <h1>Responsive Redesign</h1>
+        <img class="img-fluid img-thumbnail" src="public/old_design.png" alt="Old Bagel Gourmet Website">
+        <br>
+        <a href="http://www.bagelgourmetcafe.com/">Visit the Original Site Here!</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Finding Problems:</h2>
+      <p>
+        To discover problems with the current website, I decided to use
+        the four usability guidelines: usability, learnability, memorability,
+        and efficiency.
+      </p>
+      <h3>Usability:</h3>
+      <ol>
+        <li>The restaurant name is overlaid on a background image, which
+          makes the restaurant name hard to read.
+        </li>
+        <li>Line breaks cause important information to be misleading. On the
+          left menu, "Local Delivery" seems to be a link and "Hours" seems
+          to list the normal operation hours. However, that is actually one
+          entire text field called "Local Delivery Hours", and the store
+          actually has completely different operating hours.
+        </li>
+        <li>The small navbar text makes it hard to find and read.</li>
+        <li>The website is not responsive, which also makes reading the
+          website on smaller screens very difficult.
+        </li>
+      </ol>
+      <h3>Learnability:</h3>
+      <ol>
+        <li>The navbar is duplicated at bottom of the website for no reason,
+          which is confusing.
+        </li>
+        <li>Some underlined text fields are not links, while others are links.</li>
+        <li>Despite using the same blue color as a traditional link, 
+          the "7am-2pm" text is not actually a link.
+        </li>
+        <li>You can order food from this website, but this option is hidden
+          deep in another page.
+        </li>
+      </ol>
+      <h3>Memorability:</h3>
+      <ol>
+        <li>The website has a very old fashioned design, which does not 
+          lead to it being memorable.
+        </li>
+        <li>The numerous spelling and grammar mistakes make the website
+          memorable in a negative way.
+        </li>
+      </ol>
+      <h3>Efficiency:</h3>
+      <ol>
+        <li>An important fact, "Open to the Public," is not immediately obvious
+          to a reader since it is hidden in the left menu.
+        </li>
+        <li>The scan order is confusing. If you start reading from the
+          left menu, you need to move your eyes both to the right and down
+          in order to start reading the main content of the page.
+        </li>
+        <li>On large screens, all of the content is aligned to the left,
+          which leaves massive amounts of whitespace only on the right and
+          requires you to only look at the left of your screen.
+        </li>
+      </ol>
+    </div>
+
+    <div class="bg-light">
+      <div class="container">
+        <h2>Accessibility:</h2>
+        <p>
+          As society becomes more and more intertwined with technology, it is important
+          to remember that not everyone has the same abilities as other people. We
+          should always design our interfaces with accessibility in mind.
+        </p>
+        <p>
+          Unfortunately, the accessibility of the original website leaves much
+          to be desired. Using the WebAIM WAVE accessibility tool, I discovered
+          4 errors, 12 contrast errors, and 20 alerts. Some of the errors include
+          missing alt text for images, empty headings, and a missing page title.
+          Some alerts include instances of very small text and no defined page
+          regions.
+        </p>
+        <p>
+          Using a screen-reader on the original website was also not a good experience.
+          The spelling errors and extra punctuation confused the screen-reader and
+          resulted in weird pronunciations. Furthermore, some of the menu information
+          on the left of the screen required multiple clicks to read, which was
+          an extra annoyance. Suffice it to say, the original website was not
+          designed with accessibility in mind.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Low-Fidelity Wireframes:</h2>
+      <p>
+        The first step towards an interface redesign is creating "lo-fi"
+        wireframes. These wireframs are good for visualizing an application's
+        general layout. We further annotate our wireframes to demonstrate how
+        our redesign fixes the issues we found above.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/web_lofi_1.png" alt="Web LoFi Wireframe 1">
+          </div>
+        </div>
+        <div class="row">
+          <div class=col-lg>
+            <ul class="list-group">
+              <li class="list-group-item bg-light">1. We make the navbar the first item
+                on the page, make the text inside the navbar larger, and also
+                remove the duplicate navbar at the bottom of the page. By doing
+                this, we the navbar issues we listed above, since now the
+                navbar is easy to find due to its increased size. 
+              </li>
+              <li class="list-group-item bg-light">2. The restaurant name is now
+                text and does not have an image background. This makes the
+                restaurant name easy to read and removes the contrast issue.
+              </li>
+              <li class="list-group-item bg-light">3. We make "Now Open to the Public!"
+                front and center. This means this vital information is much
+                harder to miss, since your eyes must scan past this line to reach
+                the rest of the content.
+              </li>
+              <li class="list-group-item bg-light">4. This annotation is meant to
+                demonstrate multiple fixes. First, we fix all the miscellaneous small
+                issues we listed above, such as bad spelling/grammer, misleading
+                text color, and misleading text underlines. Furthermore, we change
+                the scan pattern to a more intuitive top to bottom order. These
+                combined changes make the site much easier to navigate.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/web_lofi_2.png" alt="Web LoFi Wireframe 2">
+          </div>
+        </div>
+        <div class="row">
+          <div class=col-lg>
+            <ul class="list-group">
+              <li class="list-group-item bg-light">5. We make the order functionality
+                of the website obvious by including an order button in the
+                middle of the website. This means that users will now easily
+                be able to find how to order food and won't need to dig
+                through different pages on the site.
+              </li>
+              <li class="list-group-item bg-light">6. We fix the clarity issue
+                regarding the listed hours here. Now, it is obvious that
+                "Hours" and "Local Delivery Hours" are distinct, and that
+                the times listed are simply text and are not links.
+              </li>
+              <li class="list-group-item bg-light">7. We distribute whitespace
+                evenly on larger screens. This prevents users from needing to
+                stare at a corner of their screen when trying to use the website,
+                which was a problem we identified earlier.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/tablet_lofi_1.png" alt="Tablet LoFi Wireframe 1">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/tablet_lofi_2.png" alt="Tablet LoFi Wireframe 2">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/mobile_lofi_1.png" alt="Mobile LoFi Wireframe 1">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/mobile_lofi_2.png" alt="Mobile LoFi Wireframe 2">
+          </div>
+        </div>
+        <div class="row">
+          <div class=col-lg>
+            <ul class="list-group">
+              <li class="list-group-item bg-light">8. These annotations represent the
+                responsive portions of the redesigned websites. This includes
+                features such as a collapsible menu bar, images and text that
+                automatically resize, and columns that become stacked as 
+                screen space is decreased. The combination of these features
+                lead to a design that is responsive across many different
+                devices. Furthermore, we still follow the patterns we established
+                earlier in the desktop redesign.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light">
+      <div class="container">
+        <h2>High-Fidelity Prototypes:</h2>
+        <p>
+          The next step in the design process is creating "hi-fi" prototypes.
+          These prototypes should be based on the layouts established in the
+          lo-fi wireframes, and would ideally look exactly like the final product.
+          We annotate our prototypes to explain how to handle responsive changes.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Visual Design Style Guide:</h2>
+      <p>
+        No design is complete without a visual design style guide. We include
+        this guide to explain important design features, such as typography,
+        colors, and component transition states.
+      </p>
+    </div>
+
+    <div class="bg-light">
+      <div class="container">
+        <h2>Redesigned Website:</h2>
+        <a href="redesign.html">Click Here to Try Out the New Site!</a>
+        <p>
+          The two main goals of my redesign were to first make the website
+          more responsive to different screen sizes, and to also fix the accessibility
+          issues present in the original site.
+        </p>
+        <p>
+          After some experimenting with different screen sizes, the redesigned
+          website is defintely responsive. Images and text are resized as needed to
+          fit on the screen, and columns are even collapsed as the screen gets smaller.
+        </p>
+        <p>
+          Accessibility is also much better. Besides WebAIM WAVE reporting no
+          errors, using a screen-reader to navigate the site is much easier as
+          there are no more grammer or spelling mistakes. Furthermore, the simplier
+          layout of the website also makes navigating the site using a screen-reader
+          much easier.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Conclusions:</h2>
+      <p>
+        As someone who has relatively little UI/UX experience, I think going
+        through the full process of redesigning an existing website was an
+        enlightening experience. I defintely learned a lot while going
+        through this complex process. And, I think I am pretty satisfied with
+        the end result. While I'm sure this redesign won't win any awards,
+        I am still satisfied at my first attempt at a redesign.
+      </p>
+    </div>
+
+    <!-- Bootstrap JS Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
