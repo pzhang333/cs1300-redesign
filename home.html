@@ -13,7 +13,7 @@
     <title>Responsive Redesign</title>
   </head>
   <body>
-    <div class="bg-light">
+    <div class="bg-light pt-5 pb-3">
       <div class="container text-center">
         <h1>Responsive Redesign</h1>
         <img class="img-fluid img-thumbnail" src="public/old_design.png" alt="Old Bagel Gourmet Website">
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-3">
       <h2>Finding Problems:</h2>
       <p>
         To discover problems with the current website, I decided to use
@@ -83,7 +83,7 @@
       </ol>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-light pt-3 pb-3">
       <div class="container">
         <h2>Accessibility:</h2>
         <p>
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-3 pb-3">
       <h2>Low-Fidelity Wireframes:</h2>
       <p>
         The first step towards an interface redesign is creating "lo-fi"
@@ -124,7 +124,7 @@
             <img class="img-fluid" src="public/web_lofi_1.png" alt="Web LoFi Wireframe 1">
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-3 mb-3">
           <div class=col-lg>
             <ul class="list-group">
               <li class="list-group-item bg-light">1. We make the navbar the first item
@@ -159,7 +159,7 @@
         </div>
         <div class="row">
           <div class=col-lg>
-            <ul class="list-group">
+            <ul class="list-group mt-3 mb-3">
               <li class="list-group-item bg-light">5. We make the order functionality
                 of the website obvious by including an order button in the
                 middle of the website. This means that users will now easily
@@ -179,20 +179,20 @@
             </ul>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-3 mb-3">
           <div class="col-lg">
-            <img class="img-fluid" src="public/tablet_lofi_1.png" alt="Tablet LoFi Wireframe 1">
+            <img class="img-fluid mx-auto d-block" src="public/tablet_lofi_1.png" alt="Tablet LoFi Wireframe 1">
           </div>
           <div class="col-lg">
-            <img class="img-fluid" src="public/tablet_lofi_2.png" alt="Tablet LoFi Wireframe 2">
+            <img class="img-fluid mx-auto d-block" src="public/tablet_lofi_2.png" alt="Tablet LoFi Wireframe 2">
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-3 mb-3">
           <div class="col-lg">
-            <img class="img-fluid" src="public/mobile_lofi_1.png" alt="Mobile LoFi Wireframe 1">
+            <img class="img-fluid mx-auto d-block" src="public/mobile_lofi_1.png" alt="Mobile LoFi Wireframe 1">
           </div>
           <div class="col-lg">
-            <img class="img-fluid" src="public/mobile_lofi_2.png" alt="Mobile LoFi Wireframe 2">
+            <img class="img-fluid mx-auto d-block" src="public/mobile_lofi_2.png" alt="Mobile LoFi Wireframe 2">
           </div>
         </div>
         <div class="row">
@@ -213,7 +213,7 @@
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-light pt-3 pb-3">
       <div class="container">
         <h2>High-Fidelity Prototypes:</h2>
         <p>
@@ -222,22 +222,159 @@
           lo-fi wireframes, and would ideally look exactly like the final product.
           We annotate our prototypes to explain how to handle responsive changes.
         </p>
+        <div class="container">
+          <div class="row mt-3 mb-3">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/web_hifi_1.png" alt="Web HiFi Prototype 1">
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class=col-lg>
+              <ul class="list-group">
+                <li class="list-group-item">1. This navbar will be
+                  implemented using a flex-box with content justified using flex-end.
+                  This will allow the elements to be aligned to the right hand side.
+                  The current page will have a dark gray colored link. Other links
+                  have a lighter gray color, and links that are hovered over will
+                  have a medium shade of gray. For specific colors, reference
+                  the style guide. These transitions can be implemented using
+                  CSS media queries.
+                </li>
+                <li class="list-group-item">2. Images will have max-width
+                  set to 100% and height set to auto, which allows for images
+                  that are responsive and automatically resize as needed.
+                </li>
+                <li class="list-group-item">3. All site content is wrapped
+                  in a div that uses media queries with standard breakpoints to adjust
+                  the width of the div. This div is centered so that if a large screen
+                  is used, there will be whitespace on both the left and right of the image,
+                  and all important content will be in the center.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/web_hifi_2.png" alt="Web HiFi Prototype 2">
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class=col-lg>
+              <ul class="list-group">
+                <li class="list-group-item">4. The width of paragraphs will
+                  also be adjusted using CSS media queries and standard device
+                  breakpoints. This ensures that text on our website will also
+                  be responsive.
+                </li>
+                <li class="list-group-item">7. This button has several different
+                  interactive states. When the button is hovered over, the button
+                  should darken in color. When the button is clicked, it should both
+                  darken and receive an outline. All of this can be done using
+                  different CSS media queries such as :hover and :focus. For
+                  specific color information, reference the style guide below.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/web_hifi_3.png" alt="Web HiFi Prototype 3">
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class=col-lg>
+              <ul class="list-group">
+                <li class="list-group-item">5. These tables will be implemented
+                  using a flexbox with 2 columns. When a specific breakpoint
+                  is reached, the 2 columns will be collapsed into 2 rows
+                  show that the tables can be read even on a mobile device.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/tablet_hifi_1.png" alt="Tablet HiFi Prototype 1">
+            </div>
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/tablet_hifi_2.png" alt="Tablet HiFi Prototype 2">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/tablet_hifi_3.png" alt="Tablet HiFi Prototype 3">
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class=col-lg>
+              <ul class="list-group">
+                <li class="list-group-item">6. On smaller screen sizes, the full size navbar
+                  should become hidden and a menu toggle button should appear instead. When
+                  clicked, the menu button should receive an outline, which can be done using CSS
+                  media queries. The logic to show and hide navbar links requires a combination 
+                  of CSS as well as some JavaScript. The navbar links themselves should appear 
+                  as a vertical list with text aligned to the right of the screen.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/mobile_hifi_1.png" alt="Mobile HiFi Prototype 1">
+            </div>
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/mobile_hifi_2.png" alt="Mobile HiFi Prototype 2">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/mobile_hifi_3.png" alt="Mobile HiFi Prototype 3">
+            </div>
+            <div class="col-lg">
+              <img class="img-fluid img-thumbnail mx-auto d-block" src="public/mobile_hifi_4.png" alt="Mobile HiFi Prototype 4">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-3 pb-3">
       <h2>Visual Design Style Guide:</h2>
       <p>
         No design is complete without a visual design style guide. We include
         this guide to explain important design features, such as typography,
         colors, and component transition states.
       </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/colors_styleguide.png" alt="Colors Style Guide">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/typography_styleguide.png" alt="Typography Style Guide">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/images_styleguide.png" alt="Images Style Guide">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <img class="img-fluid" src="public/button_styleguide.png" alt="Buttons Style Guide">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/navbar_styleguide.png" alt="Navbar Style Guide">
+          </div>
+          <div class="col-lg">
+            <img class="img-fluid" src="public/listgroups_styleguide.png" alt="List Group Style Guide">
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-light pt-3 pb-3">
       <div class="container">
         <h2>Redesigned Website:</h2>
-        <a href="redesign.html">Click Here to Try Out the New Site!</a>
+        <div class="text-center"><a href="redesign.html">Click Here to Try Out the New Site!</a></div>
         <p>
           The two main goals of my redesign were to first make the website
           more responsive to different screen sizes, and to also fix the accessibility
@@ -258,7 +395,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-3 pb-3">
       <h2>Conclusions:</h2>
       <p>
         As someone who has relatively little UI/UX experience, I think going
